@@ -55,14 +55,18 @@ namespace Slot_Game
             {
 
 
-              
 
-                Console.WriteLine("Press Space to spin.");
+                String space = "Press Space to Spin.";
+
+                String spinningText = "Spinning...         ";
+                WriteAt(space, 0, 3);
 
                 ConsoleKeyInfo info = Console.ReadKey();
                 if (info.Key == ConsoleKey.Spacebar)
                 {
-                    bool slotCheck = false;
+
+                    WriteAt(spinningText, 0, 3);
+
 
                     int slotNumber = r.Next(1, 6);
                     int slotNumber2 = r.Next(1, 6);
@@ -92,21 +96,20 @@ namespace Slot_Game
 
                     for (int i = 0; i < 20; i++)
                     {
-                        slotCheck = false;
 
                         slotNumber = r.Next(1, 6);
                         slotNumber2 = r.Next(1, 6);
-                         slotNumber3 = r.Next(1, 6);
-                         slotNumber4 = r.Next(1, 6);
-                         slotNumber5 = r.Next(1, 6);
-                         slotNumber6 = r.Next(1, 6);
-                         slotNumber7 = r.Next(1, 6);
-                         slotNumber8 = r.Next(1, 6);
-                         slotNumber9 = r.Next(1, 6);
+                        slotNumber3 = r.Next(1, 6);
+                        slotNumber4 = r.Next(1, 6);
+                        slotNumber5 = r.Next(1, 6);
+                        slotNumber6 = r.Next(1, 6);
+                        slotNumber7 = r.Next(1, 6);
+                        slotNumber8 = r.Next(1, 6);
+                        slotNumber9 = r.Next(1, 6);
 
-                         slotRow = new int[3];
-                         slotRow2 = new int[3];
-                         slotRow3 = new int[3];
+                        slotRow = new int[3];
+                        slotRow2 = new int[3];
+                        slotRow3 = new int[3];
 
                         slotRow[0] = slotNumber;
                         slotRow[1] = slotNumber2;
@@ -120,12 +123,12 @@ namespace Slot_Game
                         slotRow3[1] = slotNumber8;
                         slotRow3[2] = slotNumber9;
                         WriteAt(slotRow[0].ToString(), 0, 5);
-                        Thread.Sleep(100);
+                        Thread.Sleep(50);
                     }
 
                     for (int i = 0; i < 20; i++)
                     {
-                        slotCheck = false;
+
 
                         slotNumber = r.Next(1, 6);
                         slotNumber2 = r.Next(1, 6);
@@ -153,13 +156,13 @@ namespace Slot_Game
                         slotRow3[1] = slotNumber8;
                         slotRow3[2] = slotNumber9;
                         WriteAt(slotRow2[0].ToString(), 0, 6);
-                        Thread.Sleep(100);
+                        Thread.Sleep(50);
                     }
 
                     for (int i = 0; i < 20; i++)
                     {
 
-                        slotCheck = false;
+
 
                         slotNumber = r.Next(1, 6);
                         slotNumber2 = r.Next(1, 6);
@@ -187,13 +190,13 @@ namespace Slot_Game
                         slotRow3[1] = slotNumber8;
                         slotRow3[2] = slotNumber9;
                         WriteAt(slotRow3[0].ToString(), 0, 7);
-                        Thread.Sleep(100);
+                        Thread.Sleep(50);
                     }
 
                     for (int i = 0; i < 20; i++)
                     {
 
-                        slotCheck = false;
+
 
                         slotNumber = r.Next(1, 6);
                         slotNumber2 = r.Next(1, 6);
@@ -221,11 +224,11 @@ namespace Slot_Game
                         slotRow3[1] = slotNumber8;
                         slotRow3[2] = slotNumber9;
                         WriteAt(slotRow[1].ToString(), 3, 5);
-                        Thread.Sleep(100);
+                        Thread.Sleep(50);
                     }
                     for (int i = 0; i < 20; i++)
                     {
-                        slotCheck = false;
+
 
                         slotNumber = r.Next(1, 6);
                         slotNumber2 = r.Next(1, 6);
@@ -253,11 +256,11 @@ namespace Slot_Game
                         slotRow3[1] = slotNumber8;
                         slotRow3[2] = slotNumber9;
                         WriteAt(slotRow2[1].ToString(), 3, 6);
-                        Thread.Sleep(100);
+                        Thread.Sleep(50);
                     }
                     for (int i = 0; i < 20; i++)
                     {
-                        slotCheck = false;
+
 
                         slotNumber = r.Next(1, 6);
                         slotNumber2 = r.Next(1, 6);
@@ -285,12 +288,12 @@ namespace Slot_Game
                         slotRow3[1] = slotNumber8;
                         slotRow3[2] = slotNumber9;
                         WriteAt(slotRow3[1].ToString(), 3, 7);
-                        Thread.Sleep(100);
+                        Thread.Sleep(50);
                     }
 
                     for (int i = 0; i < 20; i++)
                     {
-                        slotCheck = false;
+
 
                         slotNumber = r.Next(1, 6);
                         slotNumber2 = r.Next(1, 6);
@@ -318,11 +321,11 @@ namespace Slot_Game
                         slotRow3[1] = slotNumber8;
                         slotRow3[2] = slotNumber9;
                         WriteAt(slotRow[2].ToString(), 6, 5);
-                        Thread.Sleep(100);
+                        Thread.Sleep(50);
                     }
                     for (int i = 0; i < 20; i++)
                     {
-                        slotCheck = false;
+
 
                         slotNumber = r.Next(1, 6);
                         slotNumber2 = r.Next(1, 6);
@@ -350,11 +353,11 @@ namespace Slot_Game
                         slotRow3[1] = slotNumber8;
                         slotRow3[2] = slotNumber9;
                         WriteAt(slotRow2[2].ToString(), 6, 6);
-                        Thread.Sleep(100);
+                        Thread.Sleep(50);
                     }
                     for (int i = 0; i < 20; i++)
                     {
-                        slotCheck = false;
+
 
                         slotNumber = r.Next(1, 6);
                         slotNumber2 = r.Next(1, 6);
@@ -382,11 +385,14 @@ namespace Slot_Game
                         slotRow3[1] = slotNumber8;
                         slotRow3[2] = slotNumber9;
                         WriteAt(slotRow3[2].ToString(), 6, 7);
-                        Thread.Sleep(100);
+                        Thread.Sleep(50);
+
                     }
 
-                    checkWin(slotRow, slotRow2, slotRow3, slotCheck);
+
+
                 }
+
 
 
 
@@ -401,8 +407,9 @@ namespace Slot_Game
             Console.WriteLine("Yay you win");
         }
 
-        private static void checkWin(int[] slotRow, int[] slotRow2, int[] slotRow3, bool slotCheck)
+        private static void checkWin(int[] slotRow, int[] slotRow2, int[] slotRow3)
         {
+            bool slotCheck = false;
             while (slotCheck == true)
             {
                 slotCheck = false;
@@ -476,6 +483,12 @@ namespace Slot_Game
 
         }
 
+        public string Replace(string Space, string spinningText)
+        {
+            spinningText = Space.Replace("Press Space to Spin", "Spinning...");
+
+            return spinningText;
+        }
         private static void loseCondition()
         {
             Console.WriteLine("AW, YOU LOST!!!!!!");
