@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Threading;
 namespace Slot_Game
 {
@@ -6,6 +6,8 @@ namespace Slot_Game
     {
         protected static int origRow;
         protected static int origCol;
+
+        public static int sleepTime = 70;
         protected static void WriteAt(string s, int col, int row)
         {
             try
@@ -101,7 +103,7 @@ namespace Slot_Game
 
                         slotRow[0] = slotNumber;
                         WriteAt(slotRow[0].ToString(), 0, 5);
-                        Thread.Sleep(100);
+                        Thread.Sleep(sleepTime);
                     }
 
                     for (int i = 0; i < 10; i++)
@@ -112,7 +114,7 @@ namespace Slot_Game
 
                         slotRow2[0] = slotNumber4;
                         WriteAt(slotRow2[0].ToString(), 0, 6);
-                        Thread.Sleep(100);
+                        Thread.Sleep(sleepTime);
                     }
 
                     for (int i = 0; i < 10; i++)
@@ -123,7 +125,7 @@ namespace Slot_Game
 
                         slotRow3[0] = slotNumber7;
                         WriteAt(slotRow3[0].ToString(), 0, 7);
-                        Thread.Sleep(100);
+                        Thread.Sleep(sleepTime);
                     }
 
                     for (int i = 0; i < 10; i++)
@@ -134,7 +136,7 @@ namespace Slot_Game
 
                         slotRow[1] = slotNumber2;
                         WriteAt(slotRow[1].ToString(), 3, 5);
-                        Thread.Sleep(100);
+                        Thread.Sleep(sleepTime);
                     }
                     for (int i = 0; i < 10; i++)
                     { 
@@ -143,7 +145,7 @@ namespace Slot_Game
 
                         slotRow2[1] = slotNumber5;
                         WriteAt(slotRow2[1].ToString(), 3, 6);
-                        Thread.Sleep(100);
+                        Thread.Sleep(sleepTime);
                     }
                     for (int i = 0; i < 10; i++)
                     {
@@ -153,7 +155,7 @@ namespace Slot_Game
 
                         slotRow3[1] = slotNumber7;
                         WriteAt(slotRow3[1].ToString(), 3, 7);
-                        Thread.Sleep(100);
+                        Thread.Sleep(sleepTime);
                     }
 
                     for (int i = 0; i < 10; i++)
@@ -165,7 +167,7 @@ namespace Slot_Game
 
                         slotRow[2] = slotNumber3;
                         WriteAt(slotRow[2].ToString(), 6, 5);
-                        Thread.Sleep(100);
+                        Thread.Sleep(sleepTime);
                     }
                     for (int i = 0; i < 10; i++)
                     {
@@ -175,7 +177,7 @@ namespace Slot_Game
 
                         slotRow2[2] = slotNumber6;
                         WriteAt(slotRow2[2].ToString(), 6, 6);
-                        Thread.Sleep(100);
+                        Thread.Sleep(sleepTime);
                     }
                     for (int i = 0; i < 10; i++)
                     {
@@ -184,7 +186,7 @@ namespace Slot_Game
 
                         slotRow3[2] = slotNumber9;
                         WriteAt(slotRow3[2].ToString(), 6, 7);
-                        Thread.Sleep(100);
+                        Thread.Sleep(sleepTime);
                     }
                     WinCondition(slotRow3, slotRow2, slotRow);
                 }
@@ -243,4 +245,3 @@ namespace Slot_Game
 
     }
 }
-
