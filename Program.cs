@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Threading;
 namespace Slot_Game
 {
@@ -21,11 +21,11 @@ namespace Slot_Game
         }
         static void Main(string[] args)
         {
-
+            origRow = 1;
+            origCol = 0;
             Console.WriteLine("Welcome to the slot machine!");
             getplayerBet();
             slots();
-
         }
 
 
@@ -120,7 +120,7 @@ namespace Slot_Game
                         slotRow3[1] = slotNumber8;
                         slotRow3[2] = slotNumber9;
                         WriteAt(slotRow[0].ToString(), 0, 5);
-                        Thread.Sleep(100);
+                        Thread.Sleep(75);
                     }
 
                     for (int i = 0; i < 20; i++)
@@ -153,7 +153,7 @@ namespace Slot_Game
                         slotRow3[1] = slotNumber8;
                         slotRow3[2] = slotNumber9;
                         WriteAt(slotRow2[0].ToString(), 0, 6);
-                        Thread.Sleep(100);
+                        Thread.Sleep(75);
                     }
 
                     for (int i = 0; i < 20; i++)
@@ -187,7 +187,7 @@ namespace Slot_Game
                         slotRow3[1] = slotNumber8;
                         slotRow3[2] = slotNumber9;
                         WriteAt(slotRow3[0].ToString(), 0, 7);
-                        Thread.Sleep(100);
+                        Thread.Sleep(75);
                     }
 
                     for (int i = 0; i < 20; i++)
@@ -221,7 +221,7 @@ namespace Slot_Game
                         slotRow3[1] = slotNumber8;
                         slotRow3[2] = slotNumber9;
                         WriteAt(slotRow[1].ToString(), 3, 5);
-                        Thread.Sleep(100);
+                        Thread.Sleep(75);
                     }
                     for (int i = 0; i < 20; i++)
                     {
@@ -253,7 +253,7 @@ namespace Slot_Game
                         slotRow3[1] = slotNumber8;
                         slotRow3[2] = slotNumber9;
                         WriteAt(slotRow2[1].ToString(), 3, 6);
-                        Thread.Sleep(100);
+                        Thread.Sleep(75);
                     }
                     for (int i = 0; i < 20; i++)
                     {
@@ -285,7 +285,7 @@ namespace Slot_Game
                         slotRow3[1] = slotNumber8;
                         slotRow3[2] = slotNumber9;
                         WriteAt(slotRow3[1].ToString(), 3, 7);
-                        Thread.Sleep(100);
+                        Thread.Sleep(75);
                     }
 
                     for (int i = 0; i < 20; i++)
@@ -318,7 +318,7 @@ namespace Slot_Game
                         slotRow3[1] = slotNumber8;
                         slotRow3[2] = slotNumber9;
                         WriteAt(slotRow[2].ToString(), 6, 5);
-                        Thread.Sleep(100);
+                        Thread.Sleep(75);
                     }
                     for (int i = 0; i < 20; i++)
                     {
@@ -350,7 +350,7 @@ namespace Slot_Game
                         slotRow3[1] = slotNumber8;
                         slotRow3[2] = slotNumber9;
                         WriteAt(slotRow2[2].ToString(), 6, 6);
-                        Thread.Sleep(100);
+                        Thread.Sleep(75);
                     }
                     for (int i = 0; i < 20; i++)
                     {
@@ -382,18 +382,12 @@ namespace Slot_Game
                         slotRow3[1] = slotNumber8;
                         slotRow3[2] = slotNumber9;
                         WriteAt(slotRow3[2].ToString(), 6, 7);
-                        Thread.Sleep(100);
+                        Thread.Sleep(75);
                     }
 
                     checkWin(slotRow, slotRow2, slotRow3, slotCheck);
                 }
-
-
-
-
             }
-
-
         }
 
         private static void winMethod()
@@ -470,18 +464,12 @@ namespace Slot_Game
                     winMethod();
                     getplayerBet();
                 }
-
             }
-
-
         }
 
         private static void loseCondition()
         {
             Console.WriteLine("AW, YOU LOST!!!!!!");
         }
-
-
-
     }
 }
